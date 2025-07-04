@@ -7,6 +7,7 @@ import { IdeologyMap } from "@/components/ideology-map"
 import { DebateTopics } from "@/components/debate-topics"
 import { ArrowLeft, Filter, Globe, Clock, Heart, AlertTriangle } from "lucide-react"
 import Link from "next/link"
+import { GrokRealTimeFeed } from "@/components/grok-real-time-feed"
 
 export default function ExplorePage() {
   const [selectedFilter, setSelectedFilter] = useState<string>("country")
@@ -64,6 +65,11 @@ export default function ExplorePage() {
               )
             })}
           </div>
+        </div>
+
+        {/* Grok Real-Time Feed */}
+        <div className="mb-8">
+          <GrokRealTimeFeed />
         </div>
 
         {/* Split-screen layout */}

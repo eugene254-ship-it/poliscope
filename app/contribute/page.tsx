@@ -4,8 +4,9 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { UploadForm } from "@/components/upload-form"
-import { ArrowLeft, Upload, GraduationCap, MessageSquare } from "lucide-react"
+import { ArrowLeft, Upload, GraduationCap, MessageSquare, Globe } from "lucide-react"
 import Link from "next/link"
+import { GrokCulturalBridge } from "@/components/grok-cultural-bridge"
 
 export default function ContributePage() {
   const [activeTab, setActiveTab] = useState("upload")
@@ -13,6 +14,7 @@ export default function ContributePage() {
   const tabs = [
     { id: "upload", label: "Upload & Analyze", icon: Upload },
     { id: "student", label: "Student Edition", icon: GraduationCap },
+    { id: "bridge", label: "Cultural Bridge", icon: Globe },
     { id: "debate", label: "Debate Live", icon: MessageSquare },
   ]
 
@@ -131,6 +133,8 @@ export default function ContributePage() {
             </Card>
           )}
 
+          {activeTab === "bridge" && <GrokCulturalBridge />}
+
           {activeTab === "debate" && (
             <Card className="bg-slate-800/50 border-slate-700">
               <CardHeader>
@@ -166,7 +170,7 @@ export default function ContributePage() {
                           <Button
                             size="sm"
                             variant="outline"
-                            className="border-electricBlue-600 text-electricBlue-400 hover:bg-electricBlue-600 hover:text-white"
+                            className="border-electricBlue-600 text-electricBlue-400 hover:bg-electricBlue-600 hover:text-white bg-transparent"
                           >
                             Join
                           </Button>
