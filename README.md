@@ -1,8 +1,4 @@
-Here is a compelling, action-oriented `README.md` file designed to recruit contributors to **PoliScope** — a project that combines AI, civic discourse, and ideological mapping — while **honoring the legacy and spirit of David Joel Horowitz**. This README is structured to attract developers, researchers, designers, and civic technologists who resonate with free speech, ideological clarity, and truth-seeking beyond partisan lines.
 
----
-
-````markdown
 # 🧠 PoliScope — AI-Powered Civic Intelligence
 
 **"See through the noise. Understand every side."**  
